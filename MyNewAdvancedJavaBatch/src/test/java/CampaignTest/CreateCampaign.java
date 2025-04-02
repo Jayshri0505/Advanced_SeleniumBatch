@@ -89,7 +89,7 @@ FileInputStream fis=new FileInputStream("C:\\Users\\hp\\eclipse-workspace\\MyNew
 			
 			ccp.CreateCampaignAllFields(Campaign, targetsize, closedate);
 			Thread.sleep(4000);
-
+//confirmation msg
 			String ConMsg = driver.findElement(By.xpath("//div[@role='alert']")).getText();
 			if(ConMsg.contains(Campaign))
 			{

@@ -26,13 +26,12 @@ public void createProductTest() throws InterruptedException, IOException {
 	FileInputStream fs=new FileInputStream("C:\\Users\\hp\\eclipse-workspace\\MyNewAdvancedJavaBatch\\src\\test\\resources\\commondata.properties");
 	Properties prop=new Properties();
 	prop.load(fs);
-	//String BROWSER=browser;
+	
 	String BROWSER = prop.getProperty("browser");
 	String URL = prop.getProperty("url");
 	String UNAME= prop.getProperty("uname");
 	String PWD = prop.getProperty("pwd");
-
-	//launching browser
+	
 	WebDriver driver=null;
 	if(BROWSER.equalsIgnoreCase("chrome"))
 	{

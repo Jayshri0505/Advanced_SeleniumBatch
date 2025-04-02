@@ -16,13 +16,13 @@ public class LoginTest extends BaseClass{
 	//@Parameters("browser")
 
 	@Test(retryAnalyzer=genericListenerutility.RetryListenerImp.class)
-public void loginPageTest() throws InterruptedException, IOException {
+public void loginTest() throws InterruptedException, IOException {
 		Thread.sleep(5000);
 	FileInputStream fs=new FileInputStream("C:\\Users\\hp\\eclipse-workspace\\MyNewAdvancedJavaBatch\\src\\test\\resources\\commondata.properties");
 	Properties prop=new Properties();
 	prop.load(fs);
 
-	String expectedURL="http://49.249.28.218:8098/dashboard";
+	//String expectedURL="http://49.249.28.218:8098/dashboard";
 		
 	driver.manage().window().maximize();
 	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));

@@ -21,10 +21,9 @@ import genericBaseClassUtility.BaseClass;
 
 public class CreateContact extends BaseClass
     {
-	//@Parameters("browser")
 
 	@Test(groups= {"RegressionTest"})
-	public void createContactWithCampaign() throws EncryptedDocumentException, IOException, InterruptedException {
+	public void createContactWithCampaignTest() throws EncryptedDocumentException, IOException, InterruptedException {
 			
 			Random ran=new Random();
 			int randomNum = ran.nextInt(7000);
